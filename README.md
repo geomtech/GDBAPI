@@ -1,8 +1,7 @@
 # GDBAPI
 Database management with sqlite3 using python.
 
-Don't forget to import GDBAPI!
-``import gdbapi``
+Don't forget to import GDBAPI : ``import gdbapi``
 
 ## How to use GDBAPI?
 Create a database :
