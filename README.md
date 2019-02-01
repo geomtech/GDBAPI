@@ -1,4 +1,5 @@
 # GDBAPI
 Database management with sqlite3 using python.
 
-#How to use GDBAPI?
+# How to use GDBAPI?
+Database management with sqlite3 using python.
