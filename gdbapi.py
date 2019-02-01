@@ -46,9 +46,8 @@ class Table:
 
         c = self.selectedDatabase[0]
         c.execute(request)
-        
-        names = [description[0] for description in self.selectedDatabase[0].description]
-        print(names)
 
-        for row in self.selectedDatabase[2].execute(request):
-            print(row)
+        return self.selectedDatabase[2].execute(request)
+
+    def Keys(self):
+        return [description[0] for description in self.selectedDatabase[0].description]
