@@ -38,10 +38,14 @@ class Table:
 
     def Insert(self, values):
         request = "INSERT INTO " + self.selectedTable + " VALUES " + str(values)
-        self.selectedDatabase[0].execute(request)
+        self.selectedDatabase[0].execute(request)    
 
-    def FetchAll(self):
-        request = "SELECT * from " + self.selectedTable
+    def Fetch(self, sql_condition=None):
+        request = None
+        if sql_condition != None:
+            request = "SELECT * from " + self.selectedTable + " " + sql_condition
+        else:
+            request = "SELECT * from " + self.selectedTable
         print("[DEBUG]", "request=", request)        
 
         c = self.selectedDatabase[0]
